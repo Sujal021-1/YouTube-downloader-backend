@@ -3,7 +3,7 @@
 from flask import Flask, request, jsonify
 import yt_dlp
 
-app = Flask(__name__)
+app = Flask(youtube downloader)
 
 @app.route('/download', methods=['POST'])
 def download():
@@ -20,6 +20,6 @@ def download():
                 audio_url = f.get('url')
     return jsonify({'video': video_url, 'audio': audio_url})
 
-if __name__ == '__main__':
+if youtube downloader== '__main__':
     app.run(debug=True)
     
